@@ -1,0 +1,123 @@
+<!DOCTYPE html> <!--html5-->
+<html lang="en">
+
+<head>
+<title>About Me/Sarah's Fashion Looks</title>
+<meta charset="UTF-8"/>
+<meta name="description" content="this is a description of site"/>
+<meta name="keywords" content= "fashion, style, inspiration"/>
+
+<link href="style.css" type="text/css" rel="stylesheet"/>
+<link href="tablet.css" type="text/css" rel="stylesheet"/>
+<link href="phone.css" type="text/css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+	<header>
+
+		<a href= "index.html"> <h1>Sarah's Fashion Looks</h1></a> <!--<img src image here> logo?</a>
+		alt= picture caption  <img src="image.jpg" alt="alt text" />-->
+		
+		<section class="mobilenav">
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">&#9733; Menu &#9733;</button>
+				<div id="myDropdown" class="dropdown-content">
+				  <a href="gallery.html">Gallery</a>
+				  <a href="aboutme.html">About Me</a>
+				</div>
+			  </div>
+	
+			  <style>
+				.dropbtn {
+				  background-color: #ab0a0a;
+				  color: white;
+				  padding: 16px;
+				  font-size: 16px;
+				  border: none;
+				  cursor: pointer;
+				}
+				
+				.dropbtn:hover, .dropbtn:focus {
+				  background-color: #ab0a0a;
+				}
+				
+				.dropdown {
+				  position: relative;
+				  display: inline-block;
+				}
+				
+				.dropdown-content {
+				  display: none;
+				  position: absolute;
+				  background-color: #f1f1f1;
+				  min-width: 160px;
+				  overflow: auto;
+				  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				  z-index: 1;
+				}
+				
+				.dropdown-content a {
+				  color: black;
+				  padding: 12px 16px;
+				  text-decoration: none;
+				  display: block;
+				}
+				
+				.dropdown a:hover {background-color: #ddd;}
+				
+				.show {display: block;}
+				</style>
+	
+	
+	
+	<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	document.getElementById("myDropdown").classList.toggle("show");
+	}
+	
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+	var dropdowns = document.getElementsByClassName("dropdown-content");
+	var i;
+	for (i = 0; i < dropdowns.length; i++) {
+	var openDropdown = dropdowns[i];
+	if (openDropdown.classList.contains('show')) {
+	  openDropdown.classList.remove('show');
+	}
+	}
+	}
+	}
+	</script>
+	</section>	
+
+
+
+			 <nav id= "navigation" class="desktopnav">
+					<ul>
+					<li><a href= "gallery.html">&#9733; Gallery &#9733;</a></li>
+					<li><a href= "aboutme.html">&#9733; About Me &#9733;</a></li>
+					</ul>
+					</nav>
+
+	</header>
+	
+	
+
+	<section>
+				
+		<p id="aboutWriting"><img id= "aboutPic" src="aboutme.jpeg" alt="Picture of Sarah Holtman" 
+			width= "550px" height= "auto"/>
+			<!--width 328 and height 472--> My name is Sarah Holtman. I'm 19 years old and currently perusing mechanical engineering in college. Apart from engineering, fashion is a huge part of my life and has always been something i am passionate about. I enjoy it's history and vastness for creativity and experimentation. I draw a lot of my inspiration from fashion creators Bloody Osiris, Jadon Grundy, Samuel Norris, and artist, Billie Eilish. I hope to help inspire others in the same way. My dream is to be able to freely create and produce fashion for people.</p>
+		</section>
+
+
+<footer>
+		<h3>Contact</h3>
+
+		<address><a href=" mailto:@slholtman3@gmail.com">slholtman3@gmail.com</a></address> 
+	<footer>

@@ -1,0 +1,213 @@
+<!DOCTYPE html> <!--html5-->
+<html lang="en">
+
+<head>
+  
+<title>Gallery/Sarah's Fashion Looks</title>
+<meta charset="UTF-8"/>
+<meta name="description" content="this is a description of site"/>
+<meta name="keywords" content= "fashion, style, inspiration"/>
+
+<link href="style.css" type="text/css" rel="stylesheet"/>
+<link href="tablet.css" type="text/css" rel="stylesheet"/>
+<link href="phone.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+
+	<header>
+
+    <div class="animation2">
+			<a href= "index.html"> <h1>Sarah's Fashion Looks</h1></a> <!--<img src image here> logo?</a>
+			 alt= picture caption  <img src="image.jpg" alt="alt text" />-->
+    </div>
+    
+    <section class="mobilenav">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">&#9733; Menu &#9733;</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="gallery.html">Gallery</a>
+          <a href="aboutme.html">About Me</a>
+        </div>
+        </div>
+  
+
+        <div class="shape2"></div>
+        
+
+
+        <style>
+        .dropbtn {
+          background-color: #ab0a0a;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: #880707;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown a:hover {background-color: #ddd;}
+        
+        .show {display: block;}
+        </style>
+  
+  
+  
+  <script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+  var openDropdown = dropdowns[i];
+  if (openDropdown.classList.contains('show')) {
+    openDropdown.classList.remove('show');
+  }
+  }
+  }
+  }
+  </script>
+  </section>	
+
+  
+    
+
+    <nav id= "navigation" class="desktopnav">
+					<ul>
+					<li><a href= "gallery.html">&#9733; Gallery &#9733;</a></li>
+					<li><a href= "aboutme.html">&#9733; About Me &#9733;</a></li>
+					</ul>
+					</nav>
+
+	</header>
+
+ 
+
+  <h4><a href= "gallery.html">Patchwork</a></h4> 
+  <div class="shape4"></div>
+  <h5><a href= "gallery2.html">Styled Outfits</h5>
+
+<div class="shape2"></div>
+
+
+
+	
+
+   <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="Patchwork/IMG_5126.jpeg" style="width:100%" width="1061px" height="591px">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="Patchwork/IMG_5127.jpeg" style="width:100%" width="1061px" height="591px">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="Patchwork/IMG_5128.jpeg" style="width:100%" width="1061px" height="591px">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+<p id="galleryIntro">As an engineer, I really like technical drawings and patterns which can be seen through these patches. I like this because while making art, I always seek perfection which can take days or weeks, but it always makes the product that much more rewarding. All of these denim patches will be sewn onto jeans as a collection.</p>
+
+    <div id="patches">
+      <p>1. Snake:
+        This is a black and white snake with green eyes. I made the eyes green because snakes are known for having captivating eyes. I wanted to make this because I think snakes are very interesting. I did some research and found what scale pattern I liked the most to use for the snake.</p>
+  <br><p>2. Blohsh:
+        This is a blohsh, Billie Eilish's logo, but I replaced its head with a flame. I really like Billie Eilish, so i wanted to replicate her symbol but add my own take and creativity to it. I think the conflict between the orange and yellow paint really make it pop.</p>
+  <br><p>3. Spider:
+        This is an all black spider on a white background for high contrast. This patch took the longest because I wanted to get every leg and every proportion as accurate as possible. I made this patch because I think the geometry of spiders is very interesting. Every little detail is so important for drawing something like this.</p>
+    </div>
+	
+
+
+
+   
+
+
+	<footer>
+		<h3>Contact</h3>
+
+		<address><a href=" mailto:@slholtman3@gmail.com">slholtman3@gmail.com</a></address> 
+	<footer>
+	
+	
+	
+</body>
+</html>

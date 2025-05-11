@@ -1,0 +1,39 @@
+
+
+/*----------------------tablet media queries------------------------*/
+
+@media only screen and (min-width:721px) and (max-width:990px) {
+	
+	#picture1, #picture2, #picture3 { 
+	position: relative;
+	top: 50px;
+	padding: 20px 20px 20px 20px;
+}
+
+#homepageLOGO {
+
+	padding-top: -30px;                 /*having trouble moving the logo up
+	In your style.css you are controlling the space in the header rule set not the logo rule so you need to adjust the header top padding value here*/
+}
+
+h2 {
+	font-size: 40px;
+	padding-bottom: 50px;
+}
+
+nav ul li{
+
+	font-size: 150%;
+	
+}
+
+.desktopnav{
+
+	display: block;
+}
+
+
+}
+
+
+

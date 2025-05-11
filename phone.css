@@ -1,0 +1,205 @@
+
+/*----------------------phone media queries------------------------*/
+
+
+@media screen and (max-width: 720px) {
+	
+	header {
+
+		
+	}
+
+	h1{
+		margin-top: 30px;
+		font-size: 350%;
+		
+	}
+	
+
+	nav ul li a{
+	padding: 70px 40px 40px 40px;
+	} 
+	
+	
+	#picture1{
+
+		top: 50px;
+		bottom: 150px;
+	}
+	
+	
+
+	#picture3 {
+
+		top: 50px;
+
+
+	}
+
+	#picture1, #picture2, #picture3 {
+
+		text-align: center;
+		margin: 0px auto;
+	}
+
+	footer{
+		text-align: center;
+		margin: 0px auto;
+	}
+
+	h3{ 
+		font-size: 250%
+	}
+
+	#patches{
+		text-align: left;
+		margin-left: -240px;
+		margin-right: -170px;
+	
+	  }
+
+	  .slideshow-container{
+
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-top: 100px;
+		padding-bottom: 70px;
+	  }
+
+	  .next{
+		margin-right: 50px;
+
+	  }
+
+
+	#aboutWriting{
+
+		text-align: left;
+		font-size: 175%;
+		margin-top: 80px;
+		margin-left: 30px;
+		text-indent: 60px;
+		padding-top: 100px;
+		margin-bottom: -200px;
+		
+	
+	}
+
+	.shape2 {
+		display: none
+
+	}
+
+
+	.shape3{
+		display: none
+
+	}
+
+	.shape4 {
+		display: block;
+		width: 150px; /* Set the width of the shape */
+		height: 10px; /* Set the height of the shape */
+		background-color: #ab0a0a;
+		margin-top: -20px;
+		margin-left: 120px;
+	}
+
+
+	.shape5{
+		display: block;
+		width: 190px; /* Set the width of the shape */
+		height: 10px; /* Set the height of the shape */
+		background-color: #ab0a0a;
+		margin-top: -20px;
+		margin-left: 120px;
+
+	}
+
+
+	.dropbtn {
+
+		margin-right: 70px;
+		margin-bottom: -50px;
+	}
+ 
+
+	/*menu button*/
+
+.dropbtn {
+	background-color: #ab0a0a;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+	background-color:  #880707;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px #ab0a0a
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+  
+  .dropdown {
+	padding-bottom: 50px;
+  }
+
+
+  .desktopnav {
+	display: none;
+	}
+	
+	.mobilenav {
+	display: block;
+	}
+
+	.mobilenav {
+
+		text-align: right;
+	}
+
+
+
+
+/* NOTE: Really the only thing i want to change is to have the pictures stacked one by one.
+Picture one and 2 are overlapping and i can't seem to fix it. 
+It seems like every rule I've typed isn't chnaging anything, not sure why....*/
+
+	
+	
+	
+	
+	
+	
+}
